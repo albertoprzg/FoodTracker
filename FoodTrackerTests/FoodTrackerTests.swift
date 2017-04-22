@@ -20,7 +20,7 @@ class FoodTrackerTests: XCTestCase {
         let zeroRatingMeal = Meal.init(name: "Zero", photo: nil, rating: 0)
         XCTAssertNotNil(zeroRatingMeal)
         
-        //Highest positive rating
+        // Highest positive rating
         let positiveRatingMeal = Meal.init(name: "Positive", photo: nil, rating: 5)
         XCTAssertNotNil(positiveRatingMeal)
     }

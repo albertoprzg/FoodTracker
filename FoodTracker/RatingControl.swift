@@ -146,7 +146,7 @@ import UIKit
                 hintString = nil
             }
             
-            // Calculate the value tring
+            // Calculate the value String
             let valueString: String
             switch(rating) {
             case 0:

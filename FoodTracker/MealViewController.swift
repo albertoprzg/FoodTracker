@@ -55,7 +55,7 @@ class MealViewController: UIViewController, UITextFieldDelegate,
             fatalError("Expected a dictionary containing an image, but was provided the following: \(info)")
         }
         
-        // Set the photoImageView to display the selected image.
+        // Set photoImageView to display the selected image.
         photoImageView.image = selectedImage
         
         // Dismiss the picker.
@@ -75,7 +75,7 @@ class MealViewController: UIViewController, UITextFieldDelegate,
         // Only allow photos to be picked, not taken.
         imagePickerController.sourceType = .photoLibrary
         
-        // Make sure the ViewController is notified when the user picks an image.
+        // Make sure ViewController is notified when the user picks an image.
         imagePickerController.delegate = self
         present(imagePickerController, animated: true, completion: nil)
     }
