@@ -31,18 +31,27 @@
                                             <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rwm-VJ-98b">
-                                            <rect key="frame" x="98" y="8" width="269" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rwm-VJ-98b">
+                                            <rect key="frame" x="98" y="8" width="258" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <stackView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="yr4-V8-ZqT" customClass="RatingControl" customModule="FoodTracker" customModuleProvider="target">
+                                        <stackView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="yr4-V8-ZqT" customClass="RatingControl" customModule="FoodTracker" customModuleProvider="target">
                                             <rect key="frame" x="98" y="37" width="252" height="44"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="yr4-V8-ZqT" secondAttribute="height" multiplier="63:11" id="u4M-2N-2c3"/>
+                                            </constraints>
                                         </stackView>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="yr4-V8-ZqT" firstAttribute="top" secondItem="Prr-rT-CTw" secondAttribute="topMargin" constant="29" id="5kP-5P-bwe"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="rwm-VJ-98b" secondAttribute="trailing" constant="11" id="SvQ-ZJ-Sxe"/>
+                                        <constraint firstItem="rwm-VJ-98b" firstAttribute="leading" secondItem="Prr-rT-CTw" secondAttribute="leadingMargin" constant="90" id="ULi-aj-Hdg"/>
+                                        <constraint firstAttribute="topMargin" secondItem="rwm-VJ-98b" secondAttribute="top" id="V8d-DC-pOe"/>
+                                        <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="yr4-V8-ZqT" secondAttribute="trailing" constant="11" id="nGb-TQ-K6V"/>
+                                        <constraint firstItem="yr4-V8-ZqT" firstAttribute="leading" secondItem="Prr-rT-CTw" secondAttribute="leadingMargin" constant="90" id="okK-zm-6wh"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="nameLabel" destination="rwm-VJ-98b" id="DNt-H7-0Di"/>
