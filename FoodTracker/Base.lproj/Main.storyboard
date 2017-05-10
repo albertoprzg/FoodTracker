@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -45,7 +46,7 @@
                                         </stackView>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="yr4-V8-ZqT" firstAttribute="top" secondItem="Prr-rT-CTw" secondAttribute="topMargin" constant="29" id="5kP-5P-bwe"/>
+                                        <constraint firstItem="yr4-V8-ZqT" firstAttribute="centerY" secondItem="Prr-rT-CTw" secondAttribute="topMargin" constant="51" id="5kP-5P-bwe"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="rwm-VJ-98b" secondAttribute="trailing" constant="11" id="SvQ-ZJ-Sxe"/>
                                         <constraint firstItem="rwm-VJ-98b" firstAttribute="leading" secondItem="Prr-rT-CTw" secondAttribute="leadingMargin" constant="90" id="ULi-aj-Hdg"/>
                                         <constraint firstAttribute="topMargin" secondItem="rwm-VJ-98b" secondAttribute="top" id="V8d-DC-pOe"/>
